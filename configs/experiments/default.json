@@ -1,0 +1,81 @@
+{
+  "python_path": "D:\\AIML\\ai25\\python.exe",
+  "project_path": "D:\\lds\\marl\\dynamic_evolution",
+  "api_config_path": ".\\run_conf\\api\\gemini_flash_lite.json",
+
+  "dataset": { "start": 39, "end": 40 },
+  "runtime_defaults": {
+    "skip_meta_init": true,
+    "n_base_agents": 2,
+    "min_iterations_per_agent": 1,
+    "max_iterations_per_agent": 2,
+    "agent_temperature": 0.0,
+    "meta_temperature": 0.3,
+    "fast_steps_per_window": 3,
+    "bd_check_interval": 3,
+    "graph_rewire_interval": 20,
+    "init_n_min": 3,
+    "init_n_max": 8,
+    "max_birth_death_pairs": 2,
+    "max_edge_edits": 4
+  },
+
+  "experiments": [
+    {
+      "id": "E1_M3_P1",
+      "meta_model": "openai/gpt-3.5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier"
+    },
+    {
+      "id": "E2_M4_P1",
+      "meta_model": "openai/gpt-4o-mini",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier"
+    },
+    {
+      "id": "E3_M5_P1",
+      "meta_model": "openai/gpt-5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier"
+    },
+
+    {
+      "id": "E4_M3_P2",
+      "meta_model": "openai/gpt-3.5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    },
+    {
+      "id": "E5_M4_P2",
+      "meta_model": "openai/gpt-4o-mini",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    },
+    {
+      "id": "E6_M5_P2",
+      "meta_model": "openai/gpt-5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    },
+
+    {
+      "id": "E7_M3_P3",
+      "meta_model": "openai/gpt-3.5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    },
+    {
+      "id": "E8_M4_P3",
+      "meta_model": "openai/gpt-4o-mini",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    },
+    {
+      "id": "E9_M5_P3",
+      "meta_model": "openai/gpt-5",
+      "max_fast_rounds": 18,
+      "allowed_roles": "planner,searcher,verifier,calculator,reflector"
+    }
+  ]
+}

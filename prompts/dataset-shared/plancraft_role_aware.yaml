@@ -1,0 +1,29 @@
+task_description_template: |-
+  The task is to determine whether the target crafting goal is achievable and, if so, produce a valid action plan.
+
+task_description_with_tools_template: |-
+  The task is to determine whether the target crafting goal is achievable and, if so, produce a valid action plan using the available tools.
+
+  Available tools:
+  {{tools_description}}
+
+task_behavior_template: |-
+  When doing the task:
+  - Identify the target item, available inventory, and operational constraints.
+  - Reason about feasibility before proposing a long plan.
+  - Prefer valid, minimal, executable action sequences over verbose explanation.
+  - If the task is impossible, say IMPOSSIBLE rather than forcing an invalid plan.
+  - Prefer concrete environment actions and recipe lookups over high-level strategy prose.
+  - The main deliverable should be an executable crafting sequence, not a narrative description of the plan.
+  - If you mention a step, phrase it as an action or short action sequence that could actually be executed.
+
+task_instance_template: |-
+  Crafting task:
+  {{question}}
+
+task_output_template: |-
+  The expected output should be action-oriented:
+  - either a valid executable action sequence using the available operations,
+  - or exactly IMPOSSIBLE.
+  Prefer short executable steps or an explicit action list over broad explanation.
+  Avoid recipe essays or long planning prose unless it is strictly needed to justify impossibility.

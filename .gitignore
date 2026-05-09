@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Local secrets
+key.env
+keys.env
+.env
+.env.*
+
+# Run artefacts (regenerated each run)
+log/
+logs/
+outputs/
+output/
+
+# FAISS / corpus indexes (large; download separately)
+indexes/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store

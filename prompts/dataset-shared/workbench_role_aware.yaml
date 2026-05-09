@@ -1,0 +1,30 @@
+task_description_template: |-
+  The task is to determine the correct workplace action, tool call, or action sequence needed to satisfy the request.
+
+task_description_with_tools_template: |-
+  The task is to determine the correct workplace action, tool call, or action sequence needed to satisfy the request using the available tools.
+
+  Available tools:
+  {{tools_description}}
+
+task_behavior_template: |-
+  When doing the task:
+  - Focus on what action would actually complete the user's request, not just describe it.
+  - Pay close attention to parameters, date ranges, entities, and output format requirements.
+  - Prefer exact tool invocations or action sequences over broad prose.
+  - If your role is not the final executor, contribute the best validated executable action or correction you can infer.
+  - Avoid generic planning language when a direct executable action can be stated.
+  - When enough parameters are available, commit to the most likely executable invocation rather than describing a search strategy.
+  - Keep explanations secondary; the main deliverable should look like the action itself.
+  - Do not output evidence-bundle or retrieval placeholders such as prepare_primary_filing, primary_filing, CALCULATOR_WAITING_FOR_STRUCTURED_FACTS, or generic search steps as the final task answer.
+  - If the task can be completed by a single invocation, prefer that single invocation over a multi-step narrative.
+
+task_instance_template: |-
+  Workplace task:
+  {{question}}
+
+task_output_template: |-
+  The expected output should identify the correct executable action, tool invocation, or action sequence as precisely as possible.
+  Prefer the final action itself over explanatory prose.
+  If a tool invocation can be written directly, output that invocation instead of a paragraph about what should happen.
+  Avoid answer forms that mainly describe searching, waiting for data, or inspecting documents.

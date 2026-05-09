@@ -1,0 +1,53 @@
+# =============================================================
+# TacoMAS requirements
+# Core framework: agent-scaling + meta_evolution extension
+# Python >= 3.11
+# =============================================================
+
+# --- LLM backbone (all providers via litellm) -----------------
+litellm[caching]>=1.73.6
+langchain>=0.3.26
+langchain-litellm>=0.2.1
+langchain-community>=0.3.0
+langchain-google-genai>=2.1.8
+langchain-tavily>=0.2.10
+langfuse>=3.0           # LLM call tracing (optional but imported)
+
+# --- Graph co-evolution (meta_evolution module) ---------------
+networkx>=3.0           # graph analysis: density, modularity, communities
+pydantic>=2.0           # data models / config classes
+
+# --- Agent environment tools ----------------------------------
+tavily-python           # web search tool
+beautifulsoup4          # HTML parser (parse_html_page tool)
+requests                # HTTP client
+
+# --- Finance / SEC data ---------------------------------------
+# sec-api               # SEC EDGAR API (install manually if you have a key)
+
+# --- Dataset handling -----------------------------------------
+datasets>=3.6.0
+pandas>=2.3.0
+orjson>=3.10.18
+
+# --- Config / experiment management ---------------------------
+hydra-core>=1.3.2
+pyyaml
+
+# --- Logging / utilities --------------------------------------
+loguru>=0.7.3
+
+# --- Testing --------------------------------------------------
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+# --- Optional: local LLM serving (pick one) -------------------
+# ollama                # install separately from https://ollama.com
+# vllm                  # pip install vllm  (Linux + CUDA only)
+
+# --- Optional: fine-tuning ------------------------------------
+# peft>=0.18.1
+# accelerate>=1.12.0
+
+# --- Dev / notebook -------------------------------------------
+ipykernel>=6.29.5

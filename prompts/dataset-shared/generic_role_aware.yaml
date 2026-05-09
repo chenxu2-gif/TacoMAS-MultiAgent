@@ -1,0 +1,25 @@
+task_description_template: |-
+  The task is to solve the given problem accurately using the information and tools available.
+
+task_description_with_tools_template: |-
+  The task is to solve the given problem accurately using the tools available to your role.
+
+  Use only the tools listed below. Do not assume access to any other tools.
+
+  Available tools:
+  {{tools_description}}
+
+task_behavior_template: |-
+  When doing the task:
+  - Identify what the task is actually asking for before acting.
+  - Prefer grounded, checkable answers over speculative ones.
+  - Use the available tools purposefully rather than exhaustively.
+  - If your role includes a final-answer tool, use it when you have a supported answer.
+  - If your role does not include a final-answer tool, focus on producing useful intermediate evidence, checks, or reasoning for the rest of the team.
+
+task_instance_template: |-
+  Task:
+  {{question}}
+
+task_output_template: |-
+  The expected output format is determined by the role prompt and the available tools.

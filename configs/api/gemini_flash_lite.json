@@ -1,0 +1,11 @@
+{
+  "name": "gemini_flash_lite",
+  "api_key_env": "GEMINI_API_KEY",
+  "agent_model": "gemini/gemini-2.5-flash-lite",
+  "agent_api_base": "https://generativelanguage.googleapis.com/v1beta/openai",
+  "meta_model": "gemini/gemini-2.5-flash",
+  "meta_api_base": "https://generativelanguage.googleapis.com/v1beta/openai",
+  "eval_api_key_env": "OPENAI_API_KEY",
+  "eval_model": "openai/gpt-4o-mini",
+  "eval_api_base": "https://api.openai.com/v1"
+}

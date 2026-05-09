@@ -1,0 +1,25 @@
+task_description_template: |-
+  The task is to answer the given question accurately.
+
+task_description_with_tools_template: |-
+  The task is to answer the given question accurately by interacting with the available retrieval tools and finding relevant supporting evidence.
+
+  Available tools:
+  {{tools_description}}
+
+task_behavior_template: |-
+  When doing the task:
+  - Break the question into concrete clues, entities, dates, or relations that can be searched independently.
+  - Prefer precise supporting passages over broad summaries.
+  - Check that the final answer matches all important constraints in the question.
+  - If your role cannot submit the final answer, contribute grounded evidence or contradiction checks that help another agent finish reliably.
+  - Once the evidence is sufficient, prefer the shortest exact answer span over a cautious narrative about uncertainty.
+  - Use retrieval to pin down the answer, not as the final deliverable itself.
+
+task_instance_template: |-
+  Question:
+  {{question}}
+
+task_output_template: |-
+  Aim to produce a concise, source-grounded answer. If your role is a supporting role, provide the strongest supported claims or corrections you can establish from the retrieved sources.
+  Prefer the exact answer string or the shortest faithful answer span that satisfies the question constraints.
