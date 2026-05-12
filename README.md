@@ -3,7 +3,7 @@
   &nbsp;TacoMAS: Test-Time Co-Evolution of Topology and Capability in LLM-based Multi-Agent Systems
 </h1>
 
-[Paper](<arxiv-link>) | [Project Page](<project-page>)
+[Paper](<https://arxiv.org/pdf/2605.09539>) | [Project Page](<https://github.com/chenxu2-gif/TacoMAS-MultiAgent>)
 
 📄 **Paper:** "TacoMAS: Test-Time Co-Evolution of Topology and
 Capability in LLM-based Multi-Agent Systems"  
