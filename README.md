@@ -267,10 +267,10 @@ If you find TacoMAS useful, please cite:
 @article{tacomas2026,
   title   = {TacoMAS: Test-Time Co-Evolution of Topology and Capability
              in LLM-based Multi-Agent Systems},
-  author  = {<Author One> and <Author Two> and <Author Three>},
-  journal = {<venue>},
+  author  = {Chen Xu and Yicheng Hu and Ruizi Wang and Xinyu Lin and Wenjie Wang and Dongrui Liu and Fuli Feng},
+  journal = {arXiv preprint arXiv:2605.09539},
   year    = {2026},
-  url     = {<arxiv-link>}
+  url     = {https://arxiv.org/abs/2605.09539}
 }
 ```
 
